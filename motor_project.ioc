@@ -2,8 +2,10 @@
 CAD.formats=
 CAD.pinconfig=
 CAD.provider=
-FREERTOS.IPParameters=Tasks01,configTOTAL_HEAP_SIZE
+FREERTOS.IPParameters=Tasks01,configTOTAL_HEAP_SIZE,configRECORD_STACK_HIGH_ADDRESS,configGENERATE_RUN_TIME_STATS
 FREERTOS.Tasks01=defaultTask,24,128,StartDefaultTask,Default,NULL,Dynamic,NULL,NULL
+FREERTOS.configGENERATE_RUN_TIME_STATS=1
+FREERTOS.configRECORD_STACK_HIGH_ADDRESS=1
 FREERTOS.configTOTAL_HEAP_SIZE=10240
 File.Version=6
 GPIO.groupedBy=Group By Peripherals
