@@ -64,6 +64,14 @@ extern TIM_HandleTypeDef htim1;
 /******************************************************************************/
 /*           Cortex-M3 Processor Interruption and Exception Handlers          */
 /******************************************************************************/
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  if (htim->Instance == TIM1)
+  {
+    HAL_IncTick();
+  }
+}
 /**
   * @brief This function handles Non maskable interrupt.
   */

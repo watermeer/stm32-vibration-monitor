@@ -42,6 +42,7 @@ void MX_USART1_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 void uart_print(const char *str);
+void UART_Test(void);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

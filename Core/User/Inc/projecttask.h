@@ -1,3 +1,2 @@
-void Task2_Print(void *argument);
-void Task1_LED(void *argument);
+void ProjectTask_Start(void);
 void Task_Sensor(void *argument);

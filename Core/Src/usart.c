@@ -120,5 +120,18 @@ void uart_print(const char *str)
     HAL_UART_Transmit(&huart1, (uint8_t *)str, strlen(str), 100);
 }
 
+void UART_Test(void)
+{
+  uart_print("=== UART TEST START ===\r\n");
+
+  for (uint8_t i = 0; i < 5; i++)
+  {
+    uart_print("UART1 TX OK\r\n");
+    HAL_Delay(200);
+  }
+
+  uart_print("=== UART TEST END ===\r\n");
+}
+
 /* USER CODE END 1 */
 
